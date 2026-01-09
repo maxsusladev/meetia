@@ -1,4 +1,3 @@
-
 "use client";
 import { authClient } from "@/lib/auth-client";
 
@@ -7,6 +6,13 @@ import { Input } from "@/components/ui/input";
 import { useState } from "react";
 
 
+/**
+ * Renders the home page with authentication-aware UI that shows sign-up and sign-in forms when unauthenticated and a signed-in view with a sign-out control when authenticated.
+ *
+ * The sign-up and sign-in controls invoke the authentication client; success and error outcomes produce user alerts.
+ *
+ * @returns The React element for the home page UI, conditionally presenting authentication forms or the signed-in view based on session state.
+ */
 export default function Home() {
 
 
