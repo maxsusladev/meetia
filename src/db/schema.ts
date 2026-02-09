@@ -77,7 +77,7 @@ export const meetings = pgTable("meetings", {
     userId: text("userId")
         .notNull()
         .references(() => user.id, { onDelete: "cascade" }),
-    agentId: text("userId")
+    agentId: text("agentId")
         .notNull()
         .references(() => agents.id, { onDelete: "cascade" }),
     status: meetingStatus("status").notNull().default("upcoming"),
