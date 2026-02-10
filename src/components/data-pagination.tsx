@@ -12,10 +12,8 @@ export const DataPagination = ({
     onPageChange
 }: Props) => {
 
-
     return (
-
-        <div className=" flex items-center justify-between">
+        <div className="flex items-center justify-between">
             <div className="flex-1 text-sm text-muted-foreground">
                 Page {page} of {totalPages || 1}
             </div>
