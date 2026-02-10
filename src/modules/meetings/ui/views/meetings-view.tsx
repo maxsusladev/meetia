@@ -20,7 +20,6 @@ export const MeetingsView = () => {
                 <EmptyState
                     title="Create you first meeting "
                     description="Schedule  a meeting to connect with others. Each meeting lets you collaborate, share ideas, and interact with participants in real time"
-
                 />
             )}
         </div>
