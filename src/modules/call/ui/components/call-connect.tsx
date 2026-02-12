@@ -31,7 +31,7 @@ export const CallConnect = ({
 }: Props) => {
 
     const trpc = useTRPC()
-    const { mutateAsync: generaateToken } = useMutation(
+    const { mutateAsync: generateToken } = useMutation(
         trpc.meetings.generateToken.mutationOptions()
     )
 
@@ -46,7 +46,7 @@ export const CallConnect = ({
                 name: userName,
                 image: userImage
             },
-            tokenProvider: generaateToken
+            tokenProvider: generateToken
         })
         setClient(_client)
 
@@ -54,7 +54,7 @@ export const CallConnect = ({
             _client.disconnectUser();
             setClient(undefined)
         }
-    }, [userId, userName, userImage, generaateToken])
+    }, [userId, userName, userImage, generateToken])
 
     const [call, setCall] = useState<Call>();
 
