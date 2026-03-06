@@ -18,7 +18,7 @@ export const UpdateMeetingDialog = ({ open, onOpenChange, initialValues }: Updat
             onOpenChange={onOpenChange}
         >
             <MeetingForm
-                onSuccess={(id) => onOpenChange(false)}
+                onSuccess={() => onOpenChange(false)}
                 onCancel={() => onOpenChange(false)}
                 initialValues={initialValues}
 
